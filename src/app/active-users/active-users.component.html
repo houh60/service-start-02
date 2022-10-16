@@ -1,0 +1,14 @@
+<!-- <div *ngFor="let user of activeUsers; let id = index" class="row">
+    <div class="col-xs-3">
+        <p>Name: {{user}}</p>
+    </div>
+    <div class="col-xs-9">
+        <button class="btn btn-danger" (click)="setToInactive(id)">Set to Inactive</button>
+    </div>
+</div> -->
+
+<h3>Active Users</h3>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let user of activeUsers; let id = index">{{user}} | <a
+            (click)="setToInactive(id)">Set to Inactive</a></li>
+</ul>
